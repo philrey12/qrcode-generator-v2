@@ -1,1 +1,1 @@
-# qrcode-generator-v2
+# url-2-qr
