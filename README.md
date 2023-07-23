@@ -1,1 +1,1 @@
-# url-2-qr
+# url2qr
