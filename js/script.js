@@ -6,11 +6,17 @@ const onGenerateSubmit = (e) => {
 
     clearUI()
 
-    const url = document.getElementById('url').value
-    const size = document.getElementById('size').value
+    const url = document.getElementById('url')
+    const size = document.getElementById('size')
 
-    if (url === '') {
-        alert('Please enter a URL')
+    if (url.value === '') {
+        // alert('Please enter a URL')
+
+        url.classList.add('error')
+
+        setTimeout(() => {
+            url.classList.remove('error')
+        }, 1000);
     } else {
         showSpinner()
 
@@ -29,9 +35,9 @@ const onGenerateSubmit = (e) => {
 
 const generateQRCode = (url, size) => {
     const qrcode = new QRCode('qrcode', {
-        text: url,
-        width: size,
-        height: size
+        text: url.value,
+        width: size.value,
+        height: size.value
     })
 }
 
