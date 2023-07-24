@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <header class="bg-red-500 p-4 mb-10">
+    <header class="bg-red-500 p-4 mb-5">
         <div class="max-w-5xl m-auto">
             <div class="text-xl font-bold text-white text-center">
                 URL2QR
@@ -76,7 +76,7 @@
         </div>
 
         <!-- Generated QR Code -->
-        <div class="max-w-5xl m-auto flex flex-col text-center align-center justify-center mt-20">
+        <div id="generated" class="max-w-5xl m-auto flex flex-col text-center align-center justify-center mt-5">
             <!-- Spinner -->
             <div id="spinner" role="status">
                 <svg class="inline mr-2 w-24 h-24 text-gray-200 animate-spin dark:text-gray-600 fill-red-500" viewBox="0 0 100 101"
@@ -92,8 +92,13 @@
             </div>
 
             <!-- Output Image -->
-            <div id="qr-code" class="m-auto"></div>
+            <div id="qrcode" class="m-auto"></div>
         </div>
     </main>
+
+    <footer class="text-center py-5 my-5 inset-x-0 bottom-0">
+        <p>URL2QR &copy; <script>document.write(new Date().getFullYear())</script></p>
+        <p>Built by <a href="https://www.devphil.co/" target="_blank" rel="noreferrer" style="text-decoration: underline;">devphil.co</a></p>
+    </footer>
 </body>
 </html>
