@@ -57,7 +57,7 @@ const createSaveBtn = (saveUrl) => {
     const link = document.createElement('a')
 
     link.id = 'save-link'
-    link.classList = 'bg-red-500 hover:bg-red-700 text-white font-bold py-2 rounded w-1/3 m-auto my-5'
+    link.classList = 'bg-[#F84693] hover:bg-[#D83582] text-white font-bold py-2 rounded w-1/3 m-auto my-5'
     link.style.width = '240px'
     link.href = saveUrl
     link.download = 'url-qrcode'
